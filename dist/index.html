@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ToDO App</title>
+</head>
+<body>
+    
+    <main class="header"> 
+        <h1 class="main-title">To-Do App</h1>
+    </main>
+    
+    <div id='project-sidebar' class="sidebar">
+        <h1>Projects</h1>
+
+
+        <form>
+            <label for="addProject"></label> 
+            <input type="text" id="addProject" name="addProject" placeholder="Add a Project" maxlength = 10>
+            <button type='button' id="submitProject">Submit</button>
+        </form>
+
+        <div id='project-display' class="project-list">
+
+
+
+        </div>
+
+    </div>
+
+    <div id="main-content" class="main-content">
+        <h1 id="main-content-heading">My Project</h1>
+
+    
+        <form id="todo-form">
+            <label for="todo-title">Title:</label> 
+            <input type="text" id="todo-title" name="todo-title" placeholder="Add a Title" required>
+
+            <label for="todo-description">Description:</label> 
+            <input type="text" id="todo-description" name="todo-description" placeholder="Add a Description" required>
+
+            <label for="priority">Priority:</label>
+            <select id="priority" name="priority">
+                <option value="low">Low</option>
+                <option value="medium">Medium</option>
+                <option value="high">High</option>
+            </select>
+
+            <label for="duedate"> Date</label>
+            <input type="date" id="duedate" name="duedate" placeholder="MM/dd/yyyy" maxlength = 10>
+            <button id='add-task' type="button"> Add Task</button>
+
+        </form>
+
+        
+
+    <div id="main-content-box" class="main-content">
+
+        <div id="todo-container" class="todo-box">
+
+            <p id="notasks"> After adding a project, click on it to add some tasks! </p>
+
+
+        </div>
+        </div>
+        
+
+
+
+    </div>
+
+
+
+    <script src="main.js"></script>
+
+</body>
+</html>
